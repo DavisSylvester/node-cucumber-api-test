@@ -5,9 +5,7 @@ on:
     branches:
       - main
 
-permissions:
-  actions: read
-  id-token: read
+
 jobs:
   deployment:
     name: 'build'
