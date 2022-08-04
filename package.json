@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start-api": "node src/index.mjs",
     "test": "npx cucumber-js"
   },
   "keywords": [],
