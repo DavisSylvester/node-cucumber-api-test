@@ -1,0 +1,20 @@
+name: "cucumber-deploy-test"
+
+on:
+  branches:
+    - main
+
+permissions:
+  actions: read
+  id-token: read
+jobs:
+  deployment:
+    name: 'build'
+    runs-on: ubuntu-latest    
+    steps:
+      - name: "checkout"
+        uses: actions/checkout@v3
+      - name: "test"
+        run:  npm run test
+        continue-on-error: false
+        
