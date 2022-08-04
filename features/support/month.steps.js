@@ -4,9 +4,9 @@ const axios = require("axios").default;
 var fork = require('child_process').fork;
 
 
-// Before(() => {
-//   const  child = fork('./src/index.mjs');
-// });
+Before(() => {
+  const  child = fork('./src/index.mjs');
+});
 
 // After(() => {
 //   process.exit();
