@@ -1,6 +1,12 @@
+const { When, Then, After, Before } = require("@cucumber/cucumber");
 const assert = require("assert");
-const { When, Then } = require("@cucumber/cucumber");
 const axios = require("axios").default;
+var fork = require('child_process').fork;
+
+
+Before(() => {
+  const  child = fork('./src/index.mjs');
+});
 
 When("the greeter says hello", async () => {
   const response = await axios.get("http://localhost:4000/");
