@@ -33,5 +33,5 @@ When("the user makes a call to Api to get a list of months", async () => {
 });
 
 Then("I should get an Array with a length of {string}", (expectedAnswer) => {
-  assert.equal(this.totalMonths - 1, expectedAnswer);
+  assert.equal(this.totalMonths, expectedAnswer);
 })
