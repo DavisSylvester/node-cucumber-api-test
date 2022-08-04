@@ -17,4 +17,6 @@ jobs:
       - name: "test"
         run:  npm run test
         continue-on-error: false
+      - name: "test deploy"
+        run:  echo "I should deploy now"        
         
