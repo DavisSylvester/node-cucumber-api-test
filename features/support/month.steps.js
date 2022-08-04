@@ -4,13 +4,13 @@ const axios = require("axios").default;
 var fork = require('child_process').fork;
 
 
-Before(() => {
-  const  child = fork('./src/index.mjs');
-});
+// Before(() => {
+//   const  child = fork('./src/index.mjs');
+// });
 
-After(() => {
-  process.exit();
-});
+// After(() => {
+//   process.exit();
+// });
 
 When("the greeter says hello", async () => {
   const response = await axios.get("http://localhost:4000/");

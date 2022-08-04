@@ -6,4 +6,4 @@ Feature: Greeting
 
   Scenario: TEST FAILED API CALL
     When the user makes a call to Api to get a list of months
-    Then I should get an Array with a length of "11"
+    Then I should get an Array with a length of "12"
