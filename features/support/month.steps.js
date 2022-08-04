@@ -8,6 +8,10 @@ Before(() => {
   const  child = fork('./src/index.mjs');
 });
 
+After(() => {
+  process.exit();
+});
+
 When("the greeter says hello", async () => {
   const response = await axios.get("http://localhost:4000/");
   
