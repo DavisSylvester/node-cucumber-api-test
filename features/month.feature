@@ -1,13 +1,16 @@
-Feature: Greeting
+Feature: API TESTING
 
   Scenario: TEST API CALL
-    When the greeter says hello
-    Then I should have heard "12"
+    When the user makes a call to Api to get a list of months for half a year
+    Then I should get back 6 elements
 
   Scenario: TEST FAILED API CALL
     When the user makes a call to Api to get a list of months
-    Then I should get an Array with a length of "12"
+    Then Total list of months should be 12
 
-  Scenario: TEST API WITH PAYLOAD
-    When the user makes a call to Api to get a list of months
-    Then I should get an Array with a length of "12"
+  # Scenario: CREATING A USER ACCOUNT
+  #   When  I create a new user account with the email address {string}
+  #   Then I should get back a new Id of 3
+
+
+ 
